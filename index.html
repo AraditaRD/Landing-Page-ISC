@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>ISC Landing Page</title>
+        <meta name="description" content="" />
+
+        <meta name="twitter:title" content="" />
+        <meta name="twitter:description" content="" />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:title" content="Title of the project" />
+        <meta property="og:description" content="" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://github.com/AraditaRD" />
+        <!--Replace with the current website url-->
+        <meta property="og:image" content="" />
+
+        <link
+            rel="shortcut icon"
+            href="./img/logo.png"
+            type="image/x-icon"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+        />
+
+        <!-- <link rel="stylesheet" href="../../tailwind-css/tailwind-runtime.css"> -->
+        <link rel="stylesheet" href="./css/tailwind-build.css" />
+        <link rel="stylesheet" href="./css/index.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+            integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+
+    <body
+        class="tw-flex tw-min-h-[100vh] tw-w-full tw-flex-col tw-bg-[#ffffff]"
+    >
+        <header
+            class="tw-fixed tw-top-0 tw-z-20 tw-flex tw-h-[60px] tw-w-full tw-px-[10%] max-lg:tw-mr-auto lg:tw-justify-around"
+        >
+            <div
+                class="tw-absolute tw-left-0 tw-top-0 tw-z-[-1] tw-h-0 tw-w-full tw-bg-white tw-shadow-md"
+                id="expanding-header-bg"
+            >
+                <!-- expands the white background as scroll -->
+            </div>
+
+            <div class="tw-flex tw-w-max tw-place-items-center tw-gap-3">
+                <!-- <img src="./assets/public accountant.jpg"
+                alt="Stroemer logo" class="tw-w-full tw-h-full tw-object"> -->
+                <div class="tw-h-[50px] tw-w-[50px] tw-p-[4px]">
+                    <img
+                        src="./img/logo.png"
+                        alt="logo"
+                        class="tw-object tw-h-full tw-w-full"
+                    />
+                </div>
+            </div>
+            <div
+                class="collapsible-header animated-collapse"
+                id="collapsed-items"
+            >
+                <div
+                    class="tw-flex tw-h-full tw-w-max tw-gap-5 tw-text-base tw-text-white max-lg:tw-mt-[30px] max-lg:tw-flex-col max-lg:tw-place-items-end max-lg:tw-gap-5 lg:tw-mx-auto lg:tw-place-items-center"
+                >
+                    <a class="header-links" href="#about"> About us </a>
+                    <a class="header-links" href="#divisi"> Divisi </a>
+                    <a class="header-links" href="#contact"> Contact us </a>
+                    <a class="header-links" href="#opini">Opini</a>
+                </div>
+                <div
+                    class="tw-flex tw-place-items-center tw-gap-[20px] tw-text-xl max-lg:tw-w-full max-lg:tw-place-content-center max-lg:!tw-text-white"
+                >
+                    <a
+                        href="https://www.instagram.com/isc.unpam"
+                        target="_blank"
+                        rel="no-referrer"
+                        area-label="instagram"
+                        class="header-links tw-transition-colors tw-duration-[0.3s]"
+                    >
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a
+                        href="https://www.instagram.com/isc.unpam"
+                        target="_blank"
+                        rel="no-referrer"
+                        area-label="twitter"
+                        class="header-links tw-transition-colors tw-duration-[0.3s]"
+                    >
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    <a
+                        href="https://www.instagram.com/isc.unpam"
+                        target="_blank"
+                        rel="no-referrer"
+                        area-label="facebook"
+                        class="header-links tw-transition-colors tw-duration-[0.3s]"
+                    >
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                </div>
+            </div>
+            <button
+                class="bi bi-list tw-absolute tw-right-3 tw-top-3 tw-z-50 tw-text-3xl lg:tw-hidden"
+                onclick="toggleHeader()"
+                aria-label="menu"
+                id="collapse-btn"
+            >
+                <!-- <i class="bi bi-list"></i> -->
+            </button>
+        </header>
+
+        <!-- home page -->
+        <section
+            class="tw-relative tw-flex tw-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden max-lg:tw-h-[100dvh]"
+            id="hero-section"
+        >
+            <img
+                src="./img/us.jpg"
+                alt=""
+                class="tw-h-full tw-w-full tw-scale-[1.3] tw-object-cover"
+                id="hero-image"
+            />
+            <div
+                class="overlay-gradient tw-absolute tw-top-0 tw-h-full tw-w-full max-lg:tw-z-[2] max-lg:!tw-bg-[#1c1c1ca2]"
+            ></div>
+
+            <!-- <div class="tw-absolute tw-bottom-0 
+                    tw-right-[10%] max-lg:tw-z-0
+                    tw-h-[750px]
+                    tw-max-w-[450px]
+                    max-md:tw-hidden
+                    ">
+            <img src="./assets/images/homepage/lawyer.png" 
+                alt="law"
+                class="tw-object-cover tw-h-full tw-w-full
+                        ">
+        </div> -->
+
+            <div
+                class="tw-absolute tw-left-[15%] tw-top-[50%] tw-z-[5] tw-flex tw-min-w-[320px] tw-max-w-[500px] tw-translate-y-[-50%] tw-flex-col tw-gap-4 tw-p-2 tw-text-white max-md:tw-left-[50%] max-md:tw-translate-x-[-50%] max-md:tw-place-content-center max-md:tw-place-items-center"
+            >
+                <h1
+                    class="khula-font tw-text-xl tw-font-semibold max-md:tw-text-center max-md:tw-text-base"
+                >
+                    Welcome to
+                </h1>
+
+                <h2
+                    class="khula-font tw-text-6xl tw-font-bold tw-uppercase max-md:tw-text-4xl"
+                >
+                    Informatic Study Club
+                    <!-- <br class="max-md:tw-hidden">     -->
+                </h2>
+                <span
+                    class="tw-mt-2 tw-w-full tw-text-justify tw-text-lg max-md:tw-text-base"
+                >
+                Study Club yang bertujuan untuk mengasah keterampilan para mahasiswa/i Universitas Pamulang
+                </span>
+                <div
+                    class="tw-mt-3 tw-flex tw-w-full tw-gap-[2%] max-md:tw-flex-col max-md:tw-gap-4"
+                >
+
+                    <a
+                        href="#contact"
+                        class="tw-flex tw-w-full tw-place-content-center tw-place-items-center tw-gap-2 tw-bg-[#000] tw-p-3 tw-text-[#fff] tw-transition-transform tw-duration-[0.3s] hover:tw-translate-x-1"
+                    >
+                        <span>Contact us</span>
+                        <i class="bi bi-telephone-fill"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- about us -->
+
+        <section
+            class="tw-flex tw-min-h-[60vh] tw-w-full tw-place-content-center tw-place-items-center tw-gap-[10%] tw-bg-[#fff] tw-p-4 tw-px-[20%] max-lg:tw-flex-col max-lg:tw-gap-[4%] max-lg:tw-px-[5%]"
+            id="about"
+        >
+            <div
+                class="tw-flex tw-h-[350px] tw-w-[350px] tw-overflow-hidden tw-rounded-md max-md:tw-mt-[5%] max-md:tw-h-[300px] max-md:tw-w-[300px]"
+            >
+                <img
+                    src="./img/us.jpg"
+                    alt=""
+                    class="tw-w-full tw-object-cover"
+                />
+            </div>
+            <div
+                class="tw-flex tw-h-full tw-flex-col tw-gap-[5%] max-lg:tw-mt-4 max-lg:tw-gap-[3%] max-lg:tw-text-center"
+            >
+                <h2
+                    class="primary-text-color tw-text-5xl tw-font-medium tw-uppercase max-md:tw-text-3xl"
+                >
+                    About Us
+                </h2>
+                <div class="tw-mt-6 tw-max-w-[450px] tw-text-justify">
+                    Informatic Study Club (ISC) adalah Study Club yang berfokus pada pengembangan keterampilan di bidang teknologi. Terdapat 3 divisi di Study Club ini, diantaranya ada Web Development, Data Science, UI/UX, dan ada 1 divisi umum yang wajib di ikuti para anggota yaitu English Upskill. Dengan semangat inovasi dan kolaborasi, ISC berkomitmen mencetak generasi unggul di dunia teknologi. Bergabunglah dan berkembang bersama kami!
+                </div>
+            </div>
+            <div></div>
+        </section>
+
+        <!-- end of about us-->
+
+        <!-- divisi -->
+
+        <section
+            class="tw-flex tw-min-h-[60vh] tw-w-full tw-flex-col tw-place-items-center tw-gap-[10%] tw-bg-[#000] tw-p-8 tw-px-[20%] max-md:tw-h-max max-md:tw-min-h-[unset] max-md:tw-gap-[4%] max-md:tw-px-[5%]"
+            id="divisi"
+        >
+            <h2
+                class="tw-text-4xl tw-font-semibold tw-text-white max-md:tw-text-2xl"
+            >
+                Divisi
+            </h2>
+            <!-- <h2 class="tw-text-5xl max-md:tw-text-3xl primary-text-color tw-text-center"></h2> -->
+
+            <div
+                class="tw-mt-[5%] tw-flex tw-w-full tw-place-content-center tw-place-items-center tw-justify-around tw-gap-[10%] max-lg:tw-mt-4 max-lg:tw-flex-col max-lg:tw-gap-5 max-md:tw-mt-8"
+            >
+                <div
+                    class="tw-flex tw-w-full tw-flex-wrap tw-justify-around tw-gap-3 tw-rounded-sm tw-border-2 tw-border-solid tw-border-[#cccbcba0] tw-p-2"
+                >
+
+                <input
+                type="text"
+                class="input-light"
+                placeholder="Seputar Divisi"
+                id=""
+            />
+
+
+                    <div class="tw-flex tw-w-[200px] tw-flex-col tw-gap-1">
+                        <div class="dropdown input-light" id="dropdown1">
+                            <button class="dropdown-toggle tw-flex tw-gap-5">
+                                <span>Bidang</span>
+                                <i class="bi bi-chevron-down tw-ml-auto"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>Web Development</li>
+                                <li>Data Science</li>
+                                <li>Ui/Ux</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tw-flex tw-w-[200px] tw-flex-col tw-gap-1">
+                        <div class="dropdown input-light" id="dropdown2">
+                            <button class="dropdown-toggle tw-flex tw-gap-5">
+                                <span>Semester</span>
+                                <i class="bi bi-chevron-down tw-ml-auto"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="tw-mt-[5%] tw-flex tw-w-full tw-flex-wrap tw-place-content-center tw-place-items-center tw-justify-around tw-gap-8 max-lg:tw-mt-4 max-lg:tw-flex-col max-lg:tw-gap-5 max-md:tw-mt-8"
+            >
+                <a
+                    class="tw-flex tw-h-[350px] tw-w-[350px] tw-cursor-pointer tw-flex-col tw-place-items-center tw-gap-4 tw-overflow-hidden tw-bg-[#fff] tw-text-black tw-shadow-lg"
+                    target="_blank"
+                    rel="noreferrer"
+                    href=""
+                >
+                    <div class="tw-relative tw-h-[280px] tw-w-full tw-bg-white">
+                        <img
+                            src="./img/webdev.jpg"
+                            alt=""
+                            class="tw-h-full tw-w-full tw-object-cover"
+                        />
+
+                        <div
+                            class="tw-flex tw-flex-col tw-gap-1 tw-p-4 tw-text-center"
+                        >
+                            <h3 class="tw-text-lg tw-font-semibold">Web Development</h3>
+                        </div>
+                    </div>
+                </a>
+
+                <a
+                    class="tw-flex tw-h-[350px] tw-w-[350px] tw-cursor-pointer tw-flex-col tw-place-items-center tw-gap-4 tw-overflow-hidden tw-bg-[#fff] tw-text-black tw-shadow-lg"
+                    target="_blank"
+                    rel="noreferrer"
+                    href=""
+                >
+                    <div class="tw-relative tw-h-[280px] tw-w-full tw-bg-white">
+                        <img
+                            src="./img/ds.jpg"
+                            alt=""
+                            class="tw-h-full tw-w-full tw-object-cover"
+                        />
+
+                        <div
+                            class="tw-flex tw-flex-col tw-gap-1 tw-p-4 tw-text-center"
+                        >
+                            <h3 class="tw-text-lg tw-font-semibold">
+                                Data Science
+                            </h3>
+                        </div>
+                    </div>
+                </a>
+
+                <a
+                    class="tw-flex tw-h-[350px] tw-w-[350px] tw-cursor-pointer tw-flex-col tw-place-items-center tw-gap-4 tw-overflow-hidden tw-bg-[#fff] tw-text-black tw-shadow-lg"
+                    target="_blank"
+                    rel="noreferrer"
+                    href=""
+                >
+                    <div class="tw-relative tw-h-[280px] tw-w-full tw-bg-white">
+                        <img
+                            src="./img/uix.jpg"
+                            alt=""
+                            class="tw-h-full tw-w-full tw-object-cover"
+                        />
+
+                        <div
+                            class="tw-flex tw-flex-col tw-gap-1 tw-p-4 tw-text-center"
+                        >
+                            <h3 class="tw-text-lg tw-font-semibold">
+                                UI/UX
+                            </h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- contact -->
+        <section
+            class="tw-flex tw-w-full tw-place-content-center tw-place-items-center tw-gap-[10%] tw-overflow-hidden tw-bg-[#EFEFEF] tw-p-4 max-md:tw-flex-col max-md:tw-px-2 lg:tw-px-[10%]"
+            id="contact"
+        >
+            <div
+                class="tw-flex tw-h-[350px] tw-w-[350px] tw-overflow-hidden max-md:tw-hidden"
+            >
+                <img
+                    src="./img/we.jpg"
+                    alt=""
+                    class="tw-w-full tw-object-cover"
+                />
+            </div>
+            <div class="tw-mt-[5%] tw-flex tw-h-full tw-flex-col tw-gap-[5%]">
+                <div class="mxa-md:tw-text-center tw-flex tw-flex-col tw-gap-2">
+                    <h2 class="tw-text-3xl tw-font-medium max-md:tw-text-xl">
+                        Here to
+                    </h2>
+                    <h2
+                        class="primary-text-color tw-text-5xl tw-font-medium max-md:tw-text-3xl"
+                    >
+                        Contact us
+                    </h2>
+                </div>
+                <form
+                    class="tw-mt-4 tw-flex tw-max-w-[450px] tw-flex-col tw-place-content-center tw-gap-3 tw-p-2 max-md:tw-max-w-[350px]"
+                >
+                    <div
+                        class="tw-flex tw-w-[450px] tw-flex-col tw-gap-4 max-md:tw-w-[340px]"
+                    >
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-text-gray-500">Name</div>
+                            <input
+                                type="text"
+                                class="input"
+                                maxlength="10"
+                                required
+                                placeholder="name"
+                            />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-text-gray-500">Phone</div>
+                            <input
+                                type="text"
+                                class="input"
+                                required
+                                placeholder="phone"
+                            />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-text-gray-500">Email</div>
+                            <input
+                                type="email"
+                                class="input"
+                                required
+                                placeholder="email"
+                                id="email"
+                            />
+                        </div>
+
+                        <div class="tw-flex tw-w-full tw-flex-col tw-gap-2">
+                            <div class="tw-text-gray-500">Alasan Bergabung</div>
+                            <textarea
+                                class="input tw-max-h-[250px] tw-min-h-[40px] tw-w-full tw-resize-y"
+                                placeholder="alasan bergabung"
+                            ></textarea>
+                        </div>
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="btn tw-ml-auto tw-mt-5 tw-transition-transform tw-duration-[0.3s] hover:tw-translate-x-2"
+                    >
+                        <span>Submit</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- end of contact -->
+
+        <!-- opini -->
+
+        <section
+            class="tw-mt-5 tw-flex tw-w-full tw-flex-col tw-place-items-center tw-p-[5%]"
+            id="opini"
+        >
+            <h3
+                class="primary-text-color tw-text-3xl tw-font-medium max-md:tw-text-2xl"
+            >
+                Pendapat anggota terhadap ISC
+            </h3>
+
+            <div
+                class="tw-mt-[5%] tw-flex tw-w-full tw-place-content-center tw-gap-[5%]"
+            >
+                <div class="review-container tw-flex tw-flex-col">
+                    <div
+                        class="tw-flex tw-h-[150px] tw-max-w-[550px] max-md:tw-h-[150px]"
+                    >
+                        <div class="slides fade tw-text-justify tw-text-lg">
+                            <q class="tw-italic tw-text-gray-600">
+                                Di Study Club ini kita beneran dapet insight baru seputar materi yang sebelumnya gak pernah kita ketahui
+                            </q>
+                            <div class="tw-mt-2 tw-text-yellow-400">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="tw-mt-3">- Rizky Ramadhan Maulana</p>
+                        </div>
+
+                        <div class="slides fade tw-text-justify tw-text-lg">
+                            <q class="tw-italic tw-text-gray-600">
+                                Hal yang saya suka selain dari materi nya yaitu diskusi antar anggota! Dengan saling berdiskusi kita bisa saling tukar fikiran dan menambah wawasan serta teman baru
+                            </q>
+                            <div class="tw-mt-2 tw-text-yellow-400">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="tw-mt-3">- Ari Awaludin</p>
+                        </div>
+
+                        <div class="slides fade tw-text-justify tw-text-lg">
+                            <q class="tw-italic tw-text-gray-600">
+                                Karena Study Club ini diadakan setiap hari kamis, ini menjadi salah satu hal yang bermanfaat untuk mengisi kekosongan hari libur!
+                            </q>
+                            <div class="tw-mt-2 tw-text-yellow-400">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="tw-mt-3">- Aisyah Rahmawati</p>
+                        </div>
+                    </div>
+
+                    <!-- Navigation dots -->
+                    <div class="dots-container tw-mt-auto">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- end of opini -->
+
+        <footer
+            class="tw-flex tw-w-full tw-place-content-around tw-gap-3 tw-bg-[#000] tw-p-[5%] tw-px-[10%] tw-text-white max-lg:tw-flex-col"
+        >
+            <div
+                class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-place-items-center tw-gap-6 max-md:tw-w-full"
+            >
+
+            <img
+                    src="./img/logo.png"
+                    alt="logo"
+                    srcset=""
+                    class="tw-max-h-[100px] tw-max-w-[100px]"
+                />
+
+                <h2 class="tw-text-xl">Informatic Study Club</h2>
+                <div>
+                    Universitas Pamulang
+                    <br />
+                    Tangerang Selatan
+                    <br />
+                    Indonesia
+                </div>
+                <div class="tw-mt-3 tw-text-lg tw-font-semibold">Follow us</div>
+                <div class="tw-flex tw-gap-4 tw-text-2xl">
+                    <a href="" aria-label="Facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a
+                        href="https://instagram.com/isc.unpam"
+                        aria-label="Twitter"
+                    >
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    <a
+                        href="https://instagram.com/isc.unpam"
+                        aria-label="Twitter"
+                    >
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4">
+                <h2 class="tw-text-3xl max-md:tw-text-xl">Divisi</h2>
+                <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
+                    <a href="" class="footer-link">Web Development</a>
+                    <a href="" class="footer-link">Data Science</a>
+                    <a href="" class="footer-link">Ui/Ux</a>
+                    <a href="" class="footer-link">English Upskill</a>
+                </div>
+            </div>
+
+            <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4">
+                <h2 class="tw-text-3xl max-md:tw-text-xl">Resources</h2>
+                <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
+                    <a href="" class="footer-link">About us</a>
+                    <a href="" class="footer-link">Divisi</a>
+                    <a href="" class="footer-link">Contact Us</a>
+                    <a href="" class="footer-link">Opinion</a>
+                    <a href="" class="footer-link">Privacy policy</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+        integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"
+        integrity="sha512-5efjkDjhldlK+BrHauVYJpbjKrtNemLZksZWxd6Wdxvm06dceqWGLLNjZywOkvW7BF032ktHRMUOarbK9d60bg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./scripts/utils.js"></script>
+    <script src="index.js"></script>
+</html>
